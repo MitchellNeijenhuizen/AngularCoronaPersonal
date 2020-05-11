@@ -13,6 +13,11 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatMomentDateModule } from "@angular/material-moment-adapter";
 import { CalendarTwoComponent } from './calendar-two/calendar-two.component';
+import { SelectorComponent } from './selector/selector.component';
+
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+
 
 
 
@@ -21,7 +26,9 @@ import { CalendarTwoComponent } from './calendar-two/calendar-two.component';
     AppComponent,
     RegelsComponent,
     CalendarComponent,
-    CalendarTwoComponent, 
+    CalendarTwoComponent,
+    SelectorComponent, 
+    
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,9 @@ import { CalendarTwoComponent } from './calendar-two/calendar-two.component';
     MatSliderModule, 
     MatDatepickerModule,
     MatMomentDateModule,
-    FullCalendarModule 
+    FullCalendarModule,
+    MatFormFieldModule,
+    MatSelectModule
 
   ],
   providers: [],
